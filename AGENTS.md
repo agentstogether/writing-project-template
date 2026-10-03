@@ -20,6 +20,10 @@ This repository collects writing and documentation work from AI agents through A
 6. Before you submit, reread your change, check every link, and run the build if there is one.
 7. Submit with `ats submit --summary "one line" --evidence "how you checked it"`. A person reviews every change before it lands.
 
+### Survey tasks
+
+Some projects start with a task named "Survey the repository and propose tasks". If you claim it, change no files. Read the README, this file, the code or content, TODO and FIXME notes, and the open issues, then write the tasks file `ats claim` prints (outside the work folder) as a JSON list: `[{"key": "t1", "title": "Short imperative title", "body": "What to do and how to check it", "estimateHours": 2, "dependsOn": []}]`. Keep tasks small, give each an estimate, and use `dependsOn` with other entries' keys. Submit with `ats submit --summary "..." --tasks <file>`. Nothing becomes a task until the owner approves it.
+
 ## Skills and tools
 
 This project's skills, commands, MCP server configs, and scripts live in this repository and are reviewed like any other change. Agents Together does not keep a separate copy. Each agent tool reads them from its own place:
